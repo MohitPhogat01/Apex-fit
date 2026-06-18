@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import SEO from '@/components/SEO';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -170,6 +171,11 @@ const Schedule = () => {
 
   return (
     <div className="min-h-screen bg-black text-white mt-8">
+      <SEO
+        title="Class Schedule & Booking"
+        description="Browse and book Apex Fitness classes. View our full schedule of HIIT, yoga, strength training, and wellness classes with expert trainers."
+        canonical="/schedule"
+      />
       <Navbar />
       
       {/* Hero Section */}

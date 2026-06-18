@@ -10,10 +10,20 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-  ].filter(Boolean),
+  ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    // Configure for static site generation
+    rollupOptions: {
+      output: {
+        entryFileNames: '[name].js',
+        chunkFileNames: '[name]-[hash].js',
+        assetFileNames: '[name]-[hash][extname]'
+      }
+    }
+  }
 }));

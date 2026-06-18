@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import SEO from '@/components/SEO';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
@@ -35,6 +36,12 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white">
+      <SEO
+        title="Premium Fitness & Wellness Center in Jaipur"
+        description="Apex Fitness is Jaipur's premier fitness destination. State-of-the-art equipment, expert trainers, and diverse classes to help you transform your body and mind."
+        canonical="/"
+        ogType="website"
+      />
       <Navbar />
       <HeroSection />
       <AboutSection />

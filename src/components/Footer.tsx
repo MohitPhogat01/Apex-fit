@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Facebook, Twitter, Instagram, Mail, MapPin, Phone, ArrowRight } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Mail, MapPin, Phone, ArrowRight, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 
@@ -105,7 +105,7 @@ const Footer = () => {
         <div className="border-t border-white/10 mt-12 pt-8 text-center">
           <p className="text-gray-300">© {new Date().getFullYear()} Apex Fitness. All rights reserved.</p>
           <p className="text-gray-400 mt-2 text-sm">
-            Made with <span className="text-red-500">❤️</span> by{' '}
+            Made with <Heart className="inline-block w-4 h-4 text-red-500 fill-red-500 mx-1" /> by{' '}
             <a href="https://flux8labs.com" target="_blank" rel="noopener noreferrer" 
               className="text-gray-300 hover:text-white transition-colors">Flux8Labs</a>
           </p>

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import SEO from '@/components/SEO';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -17,6 +18,11 @@ const Trial = () => {
 
   return (
     <div className="min-h-screen bg-black text-white mt-16">
+      <SEO
+        title="Start Your Free 7-Day Trial"
+        description="Experience Apex Fitness with a free 7-day trial. No commitment required. Access all our premium facilities, classes, and expert trainers."
+        canonical="/trial"
+      />
       <Navbar />
       <div className="container mx-auto px-4 py-16">
         <Button variant="ghost" className="mb-8 text-white hover:bg-white/10" onClick={() => navigate('/')}> <ArrowLeft className="w-4 h-4 mr-2" /> Back to Home </Button>

@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import SEO from '@/components/SEO';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -18,6 +19,11 @@ const Contact = () => {
   useEffect(() => { document.body.classList.add('dark'); return () => document.body.classList.remove('dark'); }, []);
   return (
     <div className="min-h-screen bg-black text-white mt-16">
+      <SEO
+        title="Contact Us"
+        description="Get in touch with Apex Fitness. We're here to help with any questions about our fitness programs, facilities, or membership options."
+        canonical="/contact"
+      />
       <Navbar />
       <div className="container mx-auto px-4 py-16">
         <Button variant="ghost" className="mb-8 text-white hover:bg-white/10" onClick={() => navigate('/')}> <ArrowLeft className="w-4 h-4 mr-2" /> Back to Home </Button>
